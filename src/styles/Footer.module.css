@@ -1,0 +1,18 @@
+.footer {
+  width: 100vw;
+  background: var(--bk-gradient);
+  color: white;
+}
+
+
+
+.footerList {
+  list-style: none;
+  align-self: start;
+}
+
+.footerList a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}

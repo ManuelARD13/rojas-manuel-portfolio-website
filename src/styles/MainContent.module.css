@@ -1,0 +1,54 @@
+.cardsContainer {
+  max-width: 80vw;
+}
+
+.card {
+  width: 20rem;
+  padding: 2vw;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+.card div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card img {
+  align-self: center;
+  max-width: 35%;
+}
+
+.carouselItem {
+  position: relative;
+}
+
+.carouselCaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.slideImgs {
+  width: 60vw;
+  height: 65vh;
+}
+
+.projectsCarousel {
+  max-width: 60vw;
+}
+
+@media screen and (max-width: 768px) {
+  .slideImgs {
+    width: 85vw;
+    height: 80vh;
+  }
+
+  .projectsCarousel {
+    max-width: 85vw;
+  }
+}

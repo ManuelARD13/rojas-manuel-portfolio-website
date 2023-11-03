@@ -1,0 +1,28 @@
+.backgroundSquare {
+  background: var(--bk-gradient);
+  min-width: 80vw;
+  min-height: 100vh;
+  border-radius: 3vw;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.header {
+  position: relative;
+  max-width: 1366px;
+  height: 100vh;
+}
+
+.header > div {
+  height: 100%;
+}
+
+.headerTitle {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 800;
+  font-size: 7.5rem;
+  line-height: 0.9;
+  letter-spacing: -5px;
+}
