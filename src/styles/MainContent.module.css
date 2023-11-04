@@ -1,12 +1,33 @@
+.blurbsSection {
+  position: relative;
+}
+
+.divider {
+  width: 2%;
+  border-bottom: 6px solid #3a47d5;
+  box-shadow: var(--box-shadow);
+}
+
 .cardsContainer {
   max-width: 80vw;
 }
 
 .card {
-  width: 20rem;
-  padding: 2vw;
-  border-radius: 20px;
+  width: 15rem;
+  padding: 1.5vw 0.5vw 0vw 0.5vw;
+  margin: 0 1vw;
+  font-size: 0.85rem;
+  background: rgba(255, 255, 255, 0.37);
+  border-radius: 16px;
   box-shadow: var(--box-shadow);
+  backdrop-filter: blur(7.2px);
+  -webkit-backdrop-filter: blur(7.2px);
+  border: 1px solid rgb(255, 255, 255)s;
+  transition: ease-in 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.25);
 }
 
 .card div {
@@ -40,6 +61,18 @@
 
 .projectsCarousel {
   max-width: 60vw;
+}
+
+.backgroundSquare {
+  background: var(--bk-reverse-gradient);
+  min-width: 80vw;
+  min-height: 100vh;
+  border-radius: 3vw;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0%;
+  right: 50%;
+  z-index: -1;
 }
 
 @media screen and (max-width: 768px) {
