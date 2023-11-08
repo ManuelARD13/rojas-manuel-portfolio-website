@@ -69,35 +69,43 @@ function MainContent() {
       description: 'Example of the character creation process in RPG games build in React.js',
       img: 'img/VideoGameDemo.png',
       link: '#',
+      interval: 3000,
+      theme: 'dark',
     },
     {
       title: 'TODO App',
       description: 'Implementing CRUD operations in React.js',
       img: 'img/TODOApp.png',
       link: '#',
+      interval: 2000,
+      theme: 'light',
     },
     {
       title: 'Weather App',
       description: 'Implementing API consumption and data manipulation in React.js',
       img: 'img/VideoGameDemo.png',
       link: '#',
+      interval: 2000,
+      theme: 'dark',
     },
     {
-      title: 'Portfolio',
-      description: 'Front-end developer portfolio responsive website',
+      title: 'Portfolio Website',
+      description: 'Fully responsive Front-end developer portfolio website',
       img: 'img/portfolio-website.png',
       link: '#',
+      interval: 2000,
+      theme: '',
     },
   ];
 
   return (
     <>
-      <section className={`${styles.blurbsSection} d-flex flex-column justify-content-center align-items-center`}>
-        <h2 className='mt-5'>Regularly Implemented Lenguages and Frameworks</h2>
+      <section id="blurbsSection" className={`${styles.blurbsSection} d-flex flex-column justify-content-center align-items-center`}>
+        <h2 className="mt-5">Regularly Implemented Lenguages and Frameworks</h2>
         <p className={`${styles.divider} m-3`}></p>
         <div className={`container-fluid d-flex flex-wrap justify-content-center gap-5 m-4 ${styles.cardsContainer}`}>
           {lenguagesAndFrameworks.map((tech) => (
-            <Card className={styles.card}>
+            <Card className={styles.card} key={tech.title}>
               <Card.Img variant="top" src={tech.img} />
               <Card.Body>
                 <Card.Title>{tech.title}</Card.Title>
@@ -112,12 +120,25 @@ function MainContent() {
         <div className={styles.backgroundSquare}></div>
       </section>
       <section className="d-flex flex-column justify-content-center align-items-center">
-        <h2>Professional Developement Projects</h2>
-        <div className={styles.projectsCarousel}>
-          <Carousel activeIndex={index} onSelect={handleSelect}>
-            {
-              projects.map((project) => (
-              <Carousel.Item className={styles.carouselItem}>
+        <h2 className="mt-5">Professional Development Projects</h2>
+        <p className={`${styles.divider} m-3`}></p>
+        <div className={`${styles.projectsCarousel} m-4`}>
+          <Carousel
+            activeIndex={index}
+            onSelect={handleSelect}
+            prevIcon={
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#44d6f7" className="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+              </svg>
+            }
+            nextIcon={
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#44d6f7" className="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+              </svg>
+            }
+          >
+            {projects.map((project) => (
+              <Carousel.Item className={styles.carouselItem} interval={project.interval} data-bs-theme={project.theme} key={project.title}>
                 <img className={styles.slideImgs} src={project.img} alt="" />
                 <Carousel.Caption className={styles.carouselCaption}>
                   <h3>{project.title}</h3>

@@ -4,6 +4,7 @@
   --bk-gradient: linear-gradient(90deg, #44d6f7 0%, #3a47d5 100%);
   --bk-reverse-gradient: linear-gradient(90deg, #3a47d5 0%, #44d6f7 100%);
   --box-shadow: -5px 6px 7px #66666663;
+  color: rgba(9, 5, 68, 0.8)
 }
 
 * {

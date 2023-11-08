@@ -7,6 +7,7 @@
   position: absolute;
   top: 0;
   left: 50%;
+  z-index: -1;
 }
 
 .header {
@@ -26,4 +27,22 @@
   line-height: 0.9;
   letter-spacing: -5px;
   text-shadow: -6px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  width: 50%;
+  align-self: center;
+  padding: 0 0 10vh 3vw;
+}
+
+.arrowIcon {
+  position: absolute;
+  top: 85vh;
+  left: 48.3%;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+.arrowIcon:hover {
+  transform: scale(1.1);
 }
