@@ -100,6 +100,22 @@ function MainContent() {
 
   return (
     <>
+      <section id="aboutMe" className={`${styles.aboutMeSection}`}>
+        <div className={`${styles.aboutMeContainer} container`}>
+          <div className={`${styles.profileContainer} col-12 col-md-6`}>
+            <img src="img/profile-picture.jpg" alt="profile-picture" />
+          </div>
+          <div className={`${styles.aboutTextContainer} col-12 col-md-6 d-flex flex-column align-items-center`}>
+            <p>
+              I am a dedicated React Front-End Engineer with a passion for crafting seamless, dynamic, and user-friendly web applications. I specialize in leveraging the power of React to build
+              captivating user interfaces, harnessing its flexibility to create scalable solutions that captivate and engage users. With a meticulous eye for detail and a strong foundation in
+              JavaScript, I thrive on translating complex ideas into elegant, efficient, and high-performance code. Constantly exploring new libraries and staying at the forefront of React
+              development, I am committed to pushing the boundaries of what's achievable in web development. Let's collaborate and innovate to create exceptional user experiences!
+            </p>
+          </div>
+        </div>
+        <div className={styles.backgroundSquare}></div>
+      </section>
       <section id="blurbsSection" className={`${styles.blurbsSection} d-flex flex-column justify-content-center align-items-center`}>
         <h2 className="mt-5">Regularly Implemented Lenguages and Frameworks</h2>
         <p className={`${styles.divider} m-3`}></p>
@@ -117,7 +133,7 @@ function MainContent() {
             </Card>
           ))}
         </div>
-        <div className={styles.backgroundSquare}></div>
+        <div className={styles.backgroundSquare2}></div>
       </section>
       <section className="d-flex flex-column justify-content-center align-items-center">
         <h2 className="mt-5">Professional Development Projects</h2>
@@ -148,6 +164,7 @@ function MainContent() {
             ))}
           </Carousel>
         </div>
+        <div className={styles.backgroundSquare3}></div>
       </section>
     </>
   );

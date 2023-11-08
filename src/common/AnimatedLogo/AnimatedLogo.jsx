@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 
 import styles from 'styles/AnimatedLogo.module.css';
 
-function AnimatedLogo() {
+function AnimatedLogo({ fillColor, strokeColor }) {
+ 
   const icon = {
     hidden: {
       opacity: 0,
@@ -14,7 +15,7 @@ function AnimatedLogo() {
     visible: {
       opacity: 1,
       pathLength: 1,
-      fill: 'rgba(37, 37, 41)',
+      fill: fillColor,
     },
   };
 
@@ -37,7 +38,7 @@ function AnimatedLogo() {
   ];
 
   return (
-    <motion.svg xmlns="http://www.w3.org/2000/svg" viewBox="-75 -100 500 500" className={styles.item}>
+    <motion.svg xmlns="http://www.w3.org/2000/svg" viewBox="-75 -100 500 500" className={styles.item} style={{ stroke: strokeColor }}>
       {logoPaths.map((path) => (
         <motion.path
           d={path.d}

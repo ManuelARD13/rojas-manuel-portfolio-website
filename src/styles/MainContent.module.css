@@ -1,3 +1,55 @@
+.aboutMeSection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutMeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80vw;
+}
+
+.aboutTextContainer {
+  margin: 0 3vw 0 16vw;
+  max-width: 25vw;
+  padding: 3.5vh 2vw;
+  border: 20px solid #3a47d5;
+  border-radius: 1vw;
+  box-shadow: var(--box-shadow);
+}
+
+.aboutTextContainer p {
+  text-align: justify;
+  font-size: 1.2rem;
+  text-indent: 2vw;
+}
+
+.profileContainer {
+  position: relative;
+  top: 2vw;
+  left: 4vw;
+  height: 65vh;
+  width: 373px;
+  padding-left: 3vw;
+  background-color: #3a47d5;
+  border: 22px solid #3a47d5;
+  border-radius: 1vw;
+  box-shadow: var(--box-shadow);
+}
+
+.profileContainer img {
+  position: relative;
+  top: -4vw;
+  left: -1vw;
+  height: 65vh;
+  border-radius: 1vw;
+  border: 5px solid white;
+  box-shadow: var(--box-shadow);
+}
+
 .blurbsSection {
   position: relative;
 }
@@ -22,7 +74,7 @@
   box-shadow: var(--box-shadow);
   backdrop-filter: blur(7.2px);
   -webkit-backdrop-filter: blur(7.2px);
-  border: 1px solid rgb(255, 255, 255)s;
+  border: 1px solid rgb(255, 255, 255) s;
   transition: ease-in 0.2s;
 }
 
@@ -71,6 +123,30 @@
   min-height: 100vh;
   border-radius: 3vw;
   transform: rotate(45deg);
+  position: absolute;
+  top: 0%;
+  right: 50%;
+  z-index: -1;
+}
+
+.backgroundSquare2 {
+  background: var(--bk-gradient);
+  min-width: 80vw;
+  min-height: 100vh;
+  border-radius: 3vw;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 0%;
+  left: 70%;
+  z-index: -1;
+}
+
+.backgroundSquare3 {
+  background: var(--bk-reverse-gradient);
+  min-width: 80vw;
+  min-height: 100vh;
+  border-radius: 3vw;
+  transform: rotate(-45deg);
   position: absolute;
   top: 0%;
   right: 50%;

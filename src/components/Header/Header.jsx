@@ -5,7 +5,7 @@ import AnimatedLogo from 'common/AnimatedLogo/AnimatedLogo';
 
 function Header() {
   return (
-    <section className={`${styles.header} container-fluid`}>
+    <section id='home' className={`${styles.header} container-fluid`}>
       <div className="row">
         <div className="col-12 col-md-6 d-flex flex-column justify-content-center">
           <h1 className={styles.headerTitle}>
@@ -19,7 +19,7 @@ function Header() {
           </Button>
         </div>
         <div className={`${styles.logo} col-md-4`}>
-          <AnimatedLogo />
+          <AnimatedLogo fillColor='rgba(37, 37, 41)' strokeColor='#ebedfa' />
         </div>
       </div>
       <div className="row">
@@ -28,7 +28,7 @@ function Header() {
         </div>
       </div>
       <div className={styles.arrowIcon}>
-        <a href="#blurbsSection">
+        <a href="#aboutMe">
           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#4e4e4e60" className="bi bi-arrow-down-circle" viewBox="0 0 16 16">
             <path
               fillRule="evenodd"
